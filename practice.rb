@@ -27,3 +27,13 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+
+ben_summary = blockchain[0]["amount"] + blockchain[-2]["amount"] - blockchain[2]["amount"] - blockchain[-3]["amount"]
+brian_summary = blockchain[1]["amount"] - blockchain[3]["amount"]
+evan_summary = blockchain[2]["amount"] - blockchain[4]["amount"] + blockchain[-1]["amount"]
+anthony_summary = blockchain[3]["amount"] + blockchain[4]["amount"] + blockchain[5]["amount"] - blockchain[-1]["amount"] - blockchain[-2]["amount"]
+
+p "Ben's KelloggCoin balance is #{ben_summary}"
+p "Brian's KelloggCoin balance is #{brian_summary}" 
+p "Evan's KelloggCoin balance is #{evan_summary}" 
+p "Anthony's KelloggCoin balance is #{anthony_summary}" 
